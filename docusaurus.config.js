@@ -10,31 +10,30 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  // --- A. GENERAL METADATA ---
+  title: 'My SDD Homework', // Project ka naam change kiya
+  tagline: 'Spec-Driven Documentation for Docusaurus', // Tagline change kiya
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+  // Future flags
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // --- B. GITHUB PAGES DEPLOYMENT CONFIG ---
+  // GitHub Pages ke liye URL set kiya
+  url: 'https://alishbanasir.github.io', 
+  
+  // Repository ka naam set kiya (GitHub Pages ke liye zaroori)
+  baseUrl: '/myfirst-Docusaurus-pratice-project/', 
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'alishbanasir', // Aapka GitHub Username
+  projectName: 'myfirst-Docusaurus-pratice-project', // Aapki Repository ka naam
 
   onBrokenLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // Internationalization settings (unchanged)
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -47,10 +46,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          // Docs edit link ko apne repo se badla
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/alishbanasir/myfirst-Docusaurus-pratice-project/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -58,11 +56,9 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          // Blog edit link ko apne repo se badla
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+            'https://github.com/alishbanasir/myfirst-Docusaurus-pratice-project/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -83,7 +79,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'SDD Homework Docs', // Nav bar ka title change kiya
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -97,7 +93,8 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            // Nav bar ka GitHub link change kiya
+            href: 'https://github.com/alishbanasir/myfirst-Docusaurus-pratice-project',
             label: 'GitHub',
             position: 'right',
           },
@@ -140,13 +137,14 @@ const config = {
                 to: '/blog',
               },
               {
+                // Footer ka GitHub link change kiya
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/alishbanasir/myfirst-Docusaurus-pratice-project',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My SDD Project. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
